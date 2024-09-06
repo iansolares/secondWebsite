@@ -146,11 +146,11 @@ html{
 /* MOBILE */
 @media (max-width: 755px) {
     .mainTitle{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .subtitle{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .text{
@@ -163,7 +163,7 @@ html{
     }
 
     .menuItems{
-        font-size: 0.4rem;
+        font-size: 0.3rem;
         gap: 5px;
     }
 
