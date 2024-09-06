@@ -1,0 +1,185 @@
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0px;
+}
+
+html{
+    background: #EEEEEE;
+    color: #201E43;
+    font-size: 30px;
+}
+
+.container{
+    display: flex;
+    gap: 5px;
+}
+
+.language{
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
+    height: 30px;
+}
+
+.mainTitle{
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.upperMenu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #508C9B;
+}
+
+.subUpperMenu{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    background-color: #134B70;;;
+}
+
+.menuItems{
+    display: flex;
+    color: #EEEEEE;
+    gap: 20px;
+    float: right;
+    list-style: none;
+}
+
+.menuItem{
+    padding: 20px;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    top: 176px;
+    /*background-color: chartreuse;*/
+}
+
+.intro{
+    margin: 20px;
+    /*background-color: red;*/
+}
+
+.subtitle{
+    margin: 25px 25px 0px 25px;
+    color: #134B70;
+}
+
+.text{
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:#201E43;
+}
+
+.profilePicture{
+    height: 300px;
+    margin: 0px 25px 0px 25px;
+    display: flex;
+    float: left;
+}
+
+
+/* LAPTOP */
+@media (max-width: 1110px) {
+    .mainTitle{
+        font-size: 1.8rem;
+    }
+
+    .subtitle{
+        font-size: 1.5rem;
+    }
+
+    .text{
+        font-size: 1rem;
+    }
+
+    .menuItems{
+        font-size: 0.75rem;
+    }
+
+    .profilePicture{
+        height: 250px;
+    }
+
+    .content{
+        top: 159px;
+    }
+}
+
+/* IPAD */
+@media (max-width: 914px) {
+    .mainTitle{
+        font-size: 1.5rem;
+    }
+
+    .subtitle{
+        font-size: 1.2rem;
+    }
+
+    .text{
+        font-size: 0.7rem;
+    }
+
+    .menuItems{
+        font-size: 0.55rem;
+    }
+
+    .language{
+        height: 25px;
+    }
+
+    .profilePicture{
+        height: 200px;
+    }
+
+    .content{
+        top: 141px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 755px) {
+    .mainTitle{
+        font-size: 1.2rem;
+    }
+
+    .subtitle{
+        font-size: 0.9rem;
+    }
+
+    .text{
+        font-size: 0.5rem;
+    }
+
+    .language{
+        height: 15px;
+        padding-right: 5px;
+    }
+
+    .menuItems{
+        font-size: 0.45rem;
+        gap: 15px;
+    }
+
+    .menuItem{
+        padding: 10px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .profilePicture{
+        height: 150px;
+    }
+
+    .content{
+        top: 106px;
+    }
+}
