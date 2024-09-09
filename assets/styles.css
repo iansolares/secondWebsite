@@ -93,9 +93,12 @@ html{
 }
 
 .skillsRightPicture{
-    position: rela;
+    position: relative;
     float: left;
     margin: 20px 45px;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
 }
 
 .center-text{
@@ -112,8 +115,13 @@ html{
     z-index: 10;
 }
 
+ul .text{
+
+    padding-right: 20px;
+}
+
 /* LAPTOP */
-@media (max-width: 1110px) {
+@media (max-width: 1130px) {
     .mainTitle{
         font-size: 1.8rem;
     }
@@ -137,10 +145,19 @@ html{
     .content{
         top: 159px;
     }
+
+    ul .text{
+        font-size: 0.9rem;
+        padding-right: 20px;
+    }
+
+    .subtitle.list{
+        font-size: 1rem;
+    }
 }
 
 /* IPAD */
-@media (max-width: 914px) {
+@media (max-width: 930px) {
     .mainTitle{
         font-size: 1.5rem;
     }
@@ -168,10 +185,25 @@ html{
     .content{
         top: 141px;
     }
+
+    .subtitle.list{
+        font-size: .8rem;
+    }
+
+    .skillsRightPicture{
+        height: 150px;
+        width: 150px;
+    }
+
+    ul .text{
+        font-size: 0.6rem;
+        padding-right: 20px;
+    }
 }
 
 /* MOBILE */
-@media (max-width: 755px) {
+@media (max-width: 770px) {
+
     .mainTitle{
         font-size: 1rem;
     }
@@ -208,5 +240,27 @@ html{
 
     .content{
         top: 106px;
+        width: 100%;
     }
+
+    .skillsRightPicture{
+        width: calc(100% - 70px);
+        height: 180px;
+        object-fit: cover;
+        float: none;
+        margin-right: 0px;
+    }
+
+    .subtitle.list{
+        clear: both;
+        margin-top: 0px;
+    }
+
+    .grid-container{
+        clear: both;
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 50px;
+    }
+
 }
