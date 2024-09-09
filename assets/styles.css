@@ -57,33 +57,60 @@ html{
     position: absolute;
     width: 100%;
     top: 176px;
-    /*background-color: chartreuse;*/
-}
-
-.intro{
-    margin: 20px;
-    /*background-color: red;*/
 }
 
 .subtitle{
-    margin: 25px 25px 0px 25px;
+    margin: 25px 25px 0px 45px;
     color: #134B70;
 }
 
 .text{
     text-align: justify;
-    margin-left: 25px;
+    margin-left: 45px;
     margin-right: 25px;
     color:#201E43;
 }
 
 .profilePicture{
     height: 300px;
-    margin: 0px 25px 0px 25px;
+    margin: 0px 25px 85px 45px;
     display: flex;
     float: left;
 }
 
+.list{
+    list-style: none;
+    margin-left: 0;
+    display: grid;
+}
+
+.grid-container{
+    clear: both;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.skillsRightPicture{
+    position: rela;
+    float: left;
+    margin: 20px 45px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.contact{
+    position: fixed;
+        bottom: 3px;
+        right: 10px;
+    font-size: 20pt;
+    background-color: #EEEEEE;
+    padding: 2px;
+    z-index: 10;
+}
 
 /* LAPTOP */
 @media (max-width: 1110px) {
